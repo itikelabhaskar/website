@@ -8,7 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "build:gh": "vite build --base=/website/",
-    "deploy": "npm run build:gh && gh-pages -d dist"
+    "build:custom": "vite build --base=/",
+    "deploy": "npm run build:gh && gh-pages -d dist",
+    "deploy:custom": "npm run build:custom && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
